@@ -6,6 +6,21 @@ readme = "README.md"
 authors = [{ name = "Evgeny Goryachev", email = "saladware46@gmail.com" }]
 requires-python = ">=3.7"
 dependencies = ["typing_extensions>=4.0.0; python_version < '3.12'"]
+classifiers = [
+    "Typing :: Typed",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
 
 [build-system]
 requires = ["uv_build>=0.11.6,<0.12.0"]
