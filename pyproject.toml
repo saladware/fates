@@ -1,6 +1,6 @@
 [project]
 name = "fates"
-version = "0.1.0"
+version = "0.0.1"
 description = "A generic Result[T, E] type for explicit error propagation."
 readme = "README.md"
 authors = [{ name = "Evgeny Goryachev", email = "saladware46@gmail.com" }]
