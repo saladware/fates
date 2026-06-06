@@ -9,7 +9,6 @@ dependencies = ["typing_extensions>=4.0.0; python_version < '3.12'"]
 classifiers = [
     "Typing :: Typed",
     "Topic :: Software Development :: Libraries :: Python Modules",
-    "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.7",
@@ -91,6 +90,7 @@ docs = [
     "sphinx-autobuild>=2025.8.25",
     "sphinx-autodoc-typehints>=3.10.5",
     "sphinx-autodoc2>=0.5.0",
+    "sphinx-copybutton>=0.5.2",
 ]
 
 [tool.uv.dependency-groups]
