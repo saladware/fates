@@ -29,10 +29,9 @@ html_static_path = ["_static"]
 html_show_sphinx = False
 
 html_theme_options = {
-    # Настройки для светлой темы
     "light_css_variables": {
-        "color-brand-primary": "#E5A93C",
-        "color-brand-content": "#D2911A",
+        "color-brand-primary": "#A9720C",
+        "color-brand-content": "#A26D0B",
     },
     "dark_css_variables": {
         "color-brand-primary": "#F1C40F",
