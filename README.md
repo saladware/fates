@@ -1,6 +1,7 @@
 # fates 🔮
 
-[![](https://img.shields.io/pypi/v/fates?style=flat-square&color=green&label=latest)](https://pypi.org/project/fates/)
+[![PyPI Version](https://img.shields.io/pypi/v/fates?style=flat-square&color=green&label=latest)](https://pypi.org/project/fates/)
+[![Code Quality Check](https://github.com/saladware/fates/actions/workflows/check.yml/badge.svg)](https://github.com/saladware/fates/actions/workflows/check.yml)
 
 A robust, fully-typed, and async-ready Result pattern implementation for Python.
 
