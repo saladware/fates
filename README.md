@@ -1,6 +1,6 @@
 # fates 🔮
 
-![](https://img.shields.io/pypi/v/fates?style=flat-square&color=green&label=latest)
+[![](https://img.shields.io/pypi/v/fates?style=flat-square&color=green&label=latest)](https://pypi.org/project/fates/)
 
 A robust, fully-typed, and async-ready Result pattern implementation for Python.
 
