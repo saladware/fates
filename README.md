@@ -1,5 +1,7 @@
 # fates 🔮
 
+![](https://img.shields.io/pypi/v/fates?style=flat-square&color=green&label=latest)
+
 A robust, fully-typed, and async-ready Result pattern implementation for Python.
 
 `fates` brings expressive, functional error handling to Python, completely removing the need for defensive `try/except` blocks. It helps you build predictable pipelines with absolute type safety for both synchronous and asynchronous operations.
