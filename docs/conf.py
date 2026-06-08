@@ -54,6 +54,9 @@ html_static_path = ["_static"]
 html_show_sphinx = False
 
 html_theme_options = {
+    "source_repository": "https://github.com/saladware/fates/",
+    "source_branch": "master",
+    "source_directory": "docs/",
     "light_css_variables": {
         "color-brand-primary": "#A9720C",
         "color-brand-content": "#A26D0B",
