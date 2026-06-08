@@ -57,6 +57,7 @@ html_theme_options = {
     "source_repository": "https://github.com/saladware/fates/",
     "source_branch": "master",
     "source_directory": "docs/",
+    "navigation_with_keys": True,
     "footer_icons": [
         {
             "name": "GitHub",
