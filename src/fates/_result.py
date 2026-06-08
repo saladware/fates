@@ -30,7 +30,7 @@ class Result(Protocol, Generic[T_co, E_co]):
             42
             >>> Err("error").unwrap()
             Traceback (most recent call last):
-            fates.exceptions.UnwrapError: 'error'
+            fates._exc.UnwrapError: 'error'
         """
         ...
 
@@ -65,7 +65,7 @@ class Result(Protocol, Generic[T_co, E_co]):
             'danger'
             >>> Ok(42).unwrap_err()
             Traceback (most recent call last):
-            fates.exceptions.UnwrapError: unwrap_err() called on Ok(42)
+            fates._exc.UnwrapError: unwrap_err() called on Ok(42)
         """
         ...
 
@@ -86,7 +86,7 @@ class Result(Protocol, Generic[T_co, E_co]):
             42
             >>> Err("db_error").expect("Database connection failed")
             Traceback (most recent call last):
-            fates.exceptions.UnwrapError: Database connection failed
+            fates._exc.UnwrapError: Database connection failed
             Error details: 'db_error'
         """
         ...
@@ -248,9 +248,7 @@ class Result(Protocol, Generic[T_co, E_co]):
     def abind(
         self, binder: AsyncBinder[T_co, NewT, NewE]
     ) -> AsyncResult[NewT, E_co | NewE]:
-        """
-        Asynchronously binds the success value to an async
-            function returning a Result.
+        """Async binds the success value to an async function returning a Result.
 
         Args:
             binder (AsyncBinder[T_co, NewT, NewE]): An async

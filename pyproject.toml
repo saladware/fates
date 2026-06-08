@@ -1,6 +1,7 @@
 [project]
 name = "fates"
 version = "0.0.1"
+license = { file = "LICENSE" }
 description = "A generic Result[T, E] type for explicit error propagation."
 readme = "README.md"
 authors = [{ name = "Evgeny Goryachev", email = "saladware46@gmail.com" }]
@@ -20,6 +21,10 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
 ]
+
+[project.urls]
+Documentation = "https://saladware.github.io/fates/"
+Repository = "https://github.com/saladware/fates"
 
 [build-system]
 requires = ["uv_build>=0.11.6,<0.12.0"]
@@ -87,6 +92,7 @@ docs = [
     "furo>=2025.12.19",
     "myst-parser>=5.1.0",
     "sphinx>=9.1.0",
+    "sphinx-autoapi>=3.8.0",
     "sphinx-autobuild>=2025.8.25",
     "sphinx-autodoc-typehints>=3.10.5",
     "sphinx-autodoc2>=0.5.0",

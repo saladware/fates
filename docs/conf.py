@@ -1,4 +1,4 @@
-# Configuration file for the Sphinx documentation builder.
+"""Configuration file for the Sphinx documentation builder."""
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -14,7 +14,32 @@ release = "0.0.1"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "sphinx_copybutton"]
+extensions = [
+    "myst_parser",
+    "sphinx_copybutton",
+    "autoapi.extension",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+]
+
+autoapi_type = "python"
+autoapi_dirs = ["../src/fates/"]
+autoapi_root = "apidocs"
+
+napoleon_google_docstring = True
+napoleon_numpy_docstring = False
+
+python_use_unqualified_type_names = True
+autoapi_options = [
+    "members",
+    "undoc-members",
+    "show-inheritance",
+    "show-module-summary",
+    "imported-members",  # Позволит корректно отобразить их в fates/index.html
+]
+
+
+myst_enable_extensions = ["colon_fence"]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

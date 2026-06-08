@@ -10,9 +10,9 @@ else:
 
 
 from fates._async import AsyncResult
+from fates._exc import UnwrapError
 from fates._result import Result
 from fates._typevars import NewE, NewT, T_co
-from fates.exceptions import UnwrapError
 
 if TYPE_CHECKING:
     from fates._types import AsyncBinder, AsyncMapper, Binder, Mapper

@@ -27,5 +27,5 @@ pages/async-operations.md
 :hidden:
 :caption: API Reference
 
-pages/api-reference.md
+API Reference <apidocs/fates/index>
 ```

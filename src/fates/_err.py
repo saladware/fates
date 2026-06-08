@@ -10,9 +10,9 @@ else:
 
 
 from fates._async import AsyncResult
+from fates._exc import UnwrapError
 from fates._result import Result
 from fates._typevars import DefaultT, E_co, NewE, NewT
-from fates.exceptions import UnwrapError
 
 if TYPE_CHECKING:
     from collections.abc import Generator
